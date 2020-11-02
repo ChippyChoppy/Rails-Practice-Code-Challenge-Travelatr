@@ -1,0 +1,23 @@
+
+<h1><%= @blogger.name %> Profile Page </h1>
+<%= @blogger.bio %>
+
+
+<% @blogger.posts.each do |post| %>
+    <p>
+        <%= post.destination.country %>
+    </p>
+<% end %>
+
+<p>Total Likes: </p>
+<%= @blogger.posts.map {|post| post.likes}.sum %>
+
+
+<p>Featured Post</p>
+<% if @blogger.posts %>
+<%= link_to @blogger.featured_post.title, post_path %>
+<% end %>
+    
+  
+
+
