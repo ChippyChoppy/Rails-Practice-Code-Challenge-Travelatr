@@ -1,4 +1,5 @@
 class PostsController < ApplicationController
+    
     def index
         @posts = Post.all
     end
@@ -6,6 +7,21 @@ class PostsController < ApplicationController
     def show
         @post = Post.find(params[:id])
     end
+
+    def new
+        @post = Post.new
+    end
+
+    def create 
+        @post = Post.create(post_params)
+        if @post.valid?
+            redirect_to post_path
+        else
+            flash[:post_errors] = @post.errors.full_messages
+            redirect_to new_post_path
+        end
+    end
+
 
     private 
     def post_params

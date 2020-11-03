@@ -19,12 +19,12 @@ For each model, we have a specific vision in mind:
 
 Blogger:
 
-1. Users should be able to create a new blogger
+<!-- 1. Users should be able to create a new blogger
  	- Bloggers should have unique names and ages above 0, and their bio should be over 30 characters long.
-2. Users should be able to see the profile page of a blogger. On this page, a user should see:
-	<!-- - The total likes on all of that blogger's posts
+2. Users should be able to see the profile page of a blogger. On this page, a user should see: -->
+<!-- - The total likes on all of that blogger's posts
 	- A link to that blogger's featured post (the post with the most likes) -->
-	- **BONUS** A list of that user's top 5 most written about destinations (the destinations with the most posts)
+<!-- - **BONUS** A list of that user's top 5 most written about destinations (the destinations with the most posts) -->
 
 Destination:
 
@@ -35,7 +35,7 @@ Destination:
 
 Post:
 
-1. Users should be able to create and edit a post
+1. Users should be able<> to create and edit a post
 	- Users should be able to select a blogger from a dropdown menu
 	- Users should be able to select a destination from a dropdown menu
 	- A post should have a title
